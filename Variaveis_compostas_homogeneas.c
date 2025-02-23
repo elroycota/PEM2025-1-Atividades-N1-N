@@ -5,9 +5,9 @@
 int main () {
 
     char candidato[50][30], topCandidato[30];
-    int pe[4], ac[5],pp[10], eb[3], maior1[50], maior2[50], maior3[50], maior4[50], menor1[50], menor2[50], menor3[50], menor4[50];
+    float pe[4], ac[5],pp[10], eb[3], maior1[50], maior2[50], maior3[50], maior4[50], menor1[50], menor2[50], menor3[50], menor4[50];
     int qntd, i, j, k;
-    int soma1[50], soma2[50], soma3[50], soma4[50];
+    float soma1[50], soma2[50], soma3[50], soma4[50];
     float medPE[50], medAC[50], medPP[50], medEB[50];
     float nf[50], trocaNF;
 
@@ -25,7 +25,7 @@ int main () {
         scanf("%s", candidato[i]);
         printf("\nNotas PE(4):\n\n");
         while(j<4){
-            scanf("%d",&pe[j]);
+            scanf("%f",&pe[j]);
             if(pe[j]>maior1[i]){
                 maior1[i]=pe[j];
             }
@@ -37,7 +37,7 @@ int main () {
         }
         printf("\nNotas AC(5):\n\n"); j=0;
         while(j<5){
-            scanf("%d",&ac[j]);
+            scanf("%f",&ac[j]);
             if(ac[j]>maior2[i]){
                 maior2[i]=ac[j];
             }
@@ -49,7 +49,7 @@ int main () {
         }
         printf("\nNotas PP(10):\n\n"); j=0;
         while(j<10){
-            scanf("%d",&pp[j]);
+            scanf("%f",&pp[j]);
             if(pp[j]>maior3[i]){
                 maior3[i]=pp[j];
             }
@@ -61,7 +61,7 @@ int main () {
         }
         printf("\nNotas EB(3):\n\n"); j=0;
         while(j<3){
-            scanf("%d",&eb[j]);
+            scanf("%f",&eb[j]);
             if(eb[j]>maior4[i]){
                 maior4[i]=eb[j];
             }
